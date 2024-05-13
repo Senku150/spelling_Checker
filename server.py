@@ -5,6 +5,7 @@ import socket
 
 
 def read_specific_line(file_path, line_number):
+  print("Here")
   with open(file_path, "r") as f:
     # Check for valid line number (within file bounds)
     if line_number < 1 or line_number > sum(1 for _ in f):
